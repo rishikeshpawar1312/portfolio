@@ -1,0 +1,30 @@
+#AboutMe{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+   background-color: black;
+   color: azure;
+   border-radius: 1rem;
+
+}
+
+.aboutmetitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.aboutmecontent{
+    font-weight: 400;
+    font-size: 0.9rem;
+    max-width: 51rem;
+    padding: 0 2rem;
+    word-spacing: 2px;
+}

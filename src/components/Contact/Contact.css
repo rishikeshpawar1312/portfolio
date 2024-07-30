@@ -1,0 +1,88 @@
+#contact{
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+} 
+ 
+ 
+ .contactpagetitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+ }
+
+ .contactdesc{
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+ }
+
+ .contactform{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+ }
+
+ .name ,.email,.msg {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border:none;
+    border-radius: 0.5rem;
+    background: rgb(40, 40,  40);
+ }
+
+ .submitbtn {
+    background-color: white; /* Default button color */
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .submitbtn:hover {
+    background-color: white; /* Button color on hover */
+    transform: scale(1.1);
+  }
+  
+  .submitbtn:active {
+    background-color: #1f4d6b; /* Button color on click */
+  }
+  
+
+  .links{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 1rem;
+   margin:1rem;
+  }
+
+  .link{
+   object-fit: cover;
+   height: 3rem;
+   width: 3rem;
+   margin: 0  0.75rem;
+  }
+
+   

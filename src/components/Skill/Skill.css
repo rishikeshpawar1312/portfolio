@@ -1,0 +1,36 @@
+#skills {
+    text-align: center;
+    padding: 20px;
+    background-color: grey;
+    max-width: 65rem;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  .skillsparts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skillstitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .skillsimage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .skillsimg {
+    width:  175px;  
+    height:  131.58px;  
+    object-fit: contain;
+    margin: 10px;
+  }
+  
