@@ -126,13 +126,13 @@
     }
 
     .introcontent {
-        font-size: 8vw; /* Adjust font size for smaller screens */
+        font-size: 10vw; /* Adjust font size for smaller screens */
         align-items: center; /* Center-align the content on small screens */
         text-align: center; /* Center text when content is centered */
     }
 
     .hi {
-        font-size: 5vw; /* Larger "Hi" text for mobile */
+        font-size: 10vw; /* Larger "Hi" text for mobile */
     }
 
     .btn {
@@ -145,11 +145,11 @@
 /* Extra Small Devices */
 @media screen and (max-width: 480px) {
     .introcontent {
-        font-size: 6vw; /* Smaller font size for very small screens */
+        font-size: 10vw; /* Smaller font size for very small screens */
     }
 
     .hi {
-        font-size: 6vw; /* Adjust "Hi" size for very small screens */
+        font-size: 10vw; /* Adjust "Hi" size for very small screens */
     }
 
     .btn {
