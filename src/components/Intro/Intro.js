@@ -1,21 +1,21 @@
 import React from 'react'
 import './Intro.css'
-import bg from '../../assests/bg.png';
-import hire from '../../assests/hire.png'
-import {Link} from 'react-scroll';
+import  profile from '../../assests/profile.png';
+import hire from '../../assests/hire.png';
  
 function Intro() {
   return (
     <section id="intro">
-    <div className="introcontent">
+      <div className="introcontent">
         <span className='hi'> Hi</span>
         <span className='introtext'>I'm <span className='introname'>Rishikesh Pawar</span><br />
-        Web-Developer<p className='intropara'>I am a skilled web developer</p></span>
-        <Link><button className="btn"><img src={hire} alt="" className='btnimg' />Hire Me</button></Link>
-        
-    </div>
-    <img src={bg} alt="" className='bg'/>
-        </section>
+          Web-Developer<p className='intropara'>I am a skilled web developer</p></span>
+        <a href="https://drive.google.com/file/d/1B_LuESFwed9BVoCS4npPqqbQbImABP5W/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+          <button className="btn"><img src={hire} alt="" className='btnimg' />Resume</button>
+        </a>
+      </div>
+      <img src={profile} alt="" className='bg' />
+    </section>
   )
 }
 

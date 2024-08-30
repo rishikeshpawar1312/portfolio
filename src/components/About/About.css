@@ -1,4 +1,4 @@
-#AboutMe{
+#AboutMe {
     overflow: hidden;
     width: 100vw;
     max-width: 65rem;
@@ -8,23 +8,69 @@
     align-items: center;
     text-align: center;
     margin: 0 auto;
-   background-color: black;
-   color: azure;
-   border-radius: 1rem;
-
+    color: black;
+    border-radius: 1rem;
+    padding: 0.5rem; /* Added padding for better spacing */
 }
 
-.aboutmetitle{
+.aboutmetitle {
     font-size: 3rem;
     font-weight: 600;
     padding-top: 3rem;
     margin-bottom: 1.5rem;
 }
 
-.aboutmecontent{
+/* Content styling */
+.aboutmecontent {
     font-weight: 400;
     font-size: 0.9rem;
     max-width: 51rem;
     padding: 0 2rem;
     word-spacing: 2px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    #AboutMe {
+        padding: 2rem 1rem;
+    }
+
+    .aboutmetitle {
+        font-size: 2.5rem;
+    }
+
+    .aboutmecontent {
+        font-size: 0.85rem;
+        padding: 0 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #AboutMe {
+        padding: 2rem 1rem;
+    }
+
+    .aboutmetitle {
+        font-size: 2rem;
+    }
+
+    .aboutmecontent {
+        font-size: 0.8rem;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #AboutMe {
+        padding: 1.5rem 1rem;
+    }
+
+    .aboutmetitle {
+        font-size: 1.75rem;
+    }
+
+    .aboutmecontent {
+        font-size: 0.75rem;
+        padding: 0 1rem;
+    }
 }

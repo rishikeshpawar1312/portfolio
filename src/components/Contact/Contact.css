@@ -1,88 +1,116 @@
-#contact{
-    min-height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 60rem;
-    margin: 0 auto;
-    margin-top: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: grey;
-} 
- 
- 
- .contactpagetitle{
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 3rem;
-    margin-bottom: 1.5rem;
- }
-
- .contactdesc{
-    padding: 1rem;
-    font-size: medium;
-    font-weight: 300;
- }
-
- .contactform{
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 90vw;
-    max-width: 60rem;
- }
-
- .name ,.email,.msg {
-    font-size: medium;
-    width: 100%;
-    max-width: 40rem;
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    color: white;
-    border:none;
-    border-radius: 0.5rem;
-    background: rgb(40, 40,  40);
- }
-
- .submitbtn {
-    background-color: white; /* Default button color */
-    color: black;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .submitbtn:hover {
-    background-color: white; /* Button color on hover */
-    transform: scale(1.1);
-  }
-  
-  .submitbtn:active {
-    background-color: #1f4d6b; /* Button color on click */
-  }
-  
-
-  .links{
-   display: flex;
-   flex-wrap: wrap;
-   padding: 1rem;
-   margin:1rem;
-  }
-
-  .link{
-   object-fit: cover;
-   height: 3rem;
-   width: 3rem;
-   margin: 0  0.75rem;
-  }
-
+#contact {
+   padding: 30px;
+   width: 100vw;
+   max-width: 45rem;
+   margin: 50px auto;
+   text-align: center;
    
+   color: black; 
+   border-radius: 1rem;
+ }
+ 
+ /* Title and Description */
+ .contactpagetitle {
+   font-size: 2.5rem;
+   font-weight: 600;
+   margin-bottom: 1rem;
+ }
+ 
+ .contactdesc {
+   font-size: 1rem;
+   font-weight: 300;
+   margin-bottom: 1.5rem;
+ }
+ 
+ /* Form Styling */
+ .contactform {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .name, .email, .msg {
+   font-size: 1rem;
+   width: 100%;
+   max-width: 35rem;
+   margin: 0.5rem 0;
+   padding: 10px;
+   border: none;
+   border-radius: 0.5rem;
+   background-color: #282828; /* Dark grey background */
+   color: #fff;
+ }
+ 
+ .submitbtn {
+  background-color: #fff; /* White background for the button */
+  color: #000; /* Black text color for contrast */
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc; /* Light grey border for a subtle outline */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  margin-top: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for lift effect */
+}
+
+.submitbtn:hover {
+  background-color: #f0f0f0; /* Light grey on hover */
+  color: #000; /* Maintain black text color */
+  border: 1px solid #999; /* Darker grey border on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.submitbtn:active {
+  background-color: #e0e0e0; /* Even lighter grey on active state */
+  color: #000; /* Maintain black text color */
+  border: 1px solid #666; /* Darker grey border on active */
+  transform: scale(0.98); /* Slightly shrink button on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Reduced shadow on click */
+}
+
+ 
+ .links {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+   margin-top: 1.5rem;
+ }
+ 
+ .link {
+   height: 2.5rem;
+   width: 2.5rem;
+   object-fit: contain;
+   transition: transform 0.3s;
+ }
+ 
+ .link:hover {
+   transform: scale(1.2);
+ }
+ 
+ /* Responsive Design */
+ @media screen and (max-width: 480px) {
+   .contactpagetitle {
+     font-size: 2rem;
+   }
+ 
+   .contactform {
+     width: 90vw;
+   }
+ 
+   .name, .email, .msg {
+     font-size: 0.9rem;
+   }
+ 
+   .submitbtn {
+     font-size: 0.9rem;
+     padding: 8px 16px;
+   }
+ 
+   .link {
+     height: 2rem;
+     width: 2rem;
+   }
+ }
+ 

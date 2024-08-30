@@ -1,11 +1,12 @@
-import React from 'react'
-import './Footer.css'
+import React from 'react';
+import './Footer.css';
+
 function Footer() {
   return (
-     <footer className='footer'>
-      copyright rishikesh pawar . All right reserved 
-     </footer>
-  )
+    <footer className='footer'>
+      © 2024 Rishikesh Pawar. All Rights Reserved.
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

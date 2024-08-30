@@ -1,70 +1,96 @@
 #project {
-    text-align: center;
-    padding: 20px;
-    max-width: 65rem;
-    margin: 0 auto;
-    background-color: grey; 
-    margin-top: 50px;
-  }
-  
-  .projectpart {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .projecttitle {
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 3rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .projectsrow {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-    
-  }
-  
-  .projectsimgs {
-    width: 250px; /* Adjust the width according to your preference */
-    height: auto; /* Maintain the aspect ratio */
-    margin: 10px;
-  }
+  text-align: center;
+  padding: 40px 20px; /* Added more padding for better spacing */
+  max-width: 65rem;
+  margin: 0 auto;
+   
+  border-radius: 1rem;
+  margin-top: 50px;
+}
 
+.projectpart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projecttitle {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 3rem; /* Increased margin for better spacing */
+}
+
+.projectsrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Increased gap between cards */
+  margin-bottom: 2rem; /* Added bottom margin for more space below cards */
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px; /* Added more padding for content */
+}
+
+.card-skills {
+  font-weight: 500;
+  margin-bottom: 15px; /* Increased margin for better separation */
+  color: #333; /* Slightly darker color for better readability */
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between buttons */
+  margin-top: 10px; /* Margin above buttons */
+}
+
+.card-link {
+  background-color: #007bff; /* Blue background for button */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Added padding */
+  border-radius: 0.3rem; /* Rounded corners */
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.card-link:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slightly lift button on hover */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
   .card {
-    position: relative;
-    width: 300px;
-    overflow: hidden;
-    margin: 10px;
-    
+    width: 90%;
   }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+  .projecttitle {
+    font-size: 2rem;
   }
-  
-  .card:hover img {
-    transform: scale(1.1);
-  }
-  
-  .card-description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 10px;
-    box-sizing: border-box;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .card:hover .card-description {
-    opacity: 1;
-  }
-  
+}

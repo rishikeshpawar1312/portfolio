@@ -1,80 +1,159 @@
-#intro{
+#intro {
     height: calc(100vh - 4rem);
-    width: 100vw;
+    width: 100%;
     max-width: 75rem;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-}
-
-.bg{
-    position: absolute;
-    top:-4rem;
-    right:0;
-    z-index: -1;
-    object-fit: cover;
-    height: 600px ;
-    width: 500px;
-    
-
-}
-
-.introcontent{
-    height: 100vh;
-    width: 100vw;
+    display: flex;
+    align-items: center; /* Center-aligns content vertically */
+    justify-content: space-between; /* Spaces out the text and image */
     padding: 2rem;
+}
+
+.bg {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%; /* Keeps the image circular */
+    object-fit: cover;
+    border: 5px solid #fff; /* Adds a white border around the circular image */
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    margin-left: 2rem; /* Keeps margin to prevent overlap with navbar */
+    object-position: center ; /* Shifts the image inside the circle to the left */
+}
+
+
+/* For larger screens (Laptops) */
+@media screen and (min-width: 1024px) {
+    .bg {
+        display: block;
+    }
+}
+
+.introcontent {
     font-size: 3rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
     justify-content: center;
-     
+    align-items: flex-start; /* Align content to the left */
+    text-align: left;
 }
 
-.hi{
+.hi {
     font-size: 1.75rem;
     font-weight: 100;
 }
 
-.introname{
+.introname {
     color: aqua;
 }
 
-.intropara{
+.intropara {
     font-size: medium;
     font-weight: 200;
     letter-spacing: 1px;
 }
 
-.btn{
-    background-color: white;
-    margin: 1rem 0;
+.btn {
+    background-color: #fff; /* White background for the button */
+    color: #000; /* Black text color for contrast */
     padding: 0.75rem 2rem;
-    border: none;
+    border: 1px solid #ccc; /* Light grey border for a subtle outline */
     border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for lift effect */
 }
 
-.btnimg{
+.btn:hover {
+    background-color: #f0f0f0; /* Light grey background on hover */
+    color: #000; /* Maintain black text color */
+    border: 1px solid #999; /* Darker grey border on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.btn:active {
+    background-color: #e0e0e0; /* Even lighter grey background on active */
+    color: #000; /* Maintain black text color */
+    border: 1px solid #666; /* Darker grey border on active */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Reduced shadow on click */
+}
+
+
+.btnimg {
     object-fit: cover;
     margin: 0 0.25rem;
     height: 1rem;
 }
 
-@media screen and (max-width:840px){
-    .bg{
-        right: -10vw;
+/* Medium Devices (Tablets) */
+@media screen and (max-width: 1023px) {
+    #intro {
+        flex-direction: column-reverse; /* Stack the content and image vertically */
+        align-items: center;
     }
-    .introcontent{
-        font-size: 10vw;
+
+    .bg {
+        display: none; /* Hide background image on tablet-sized screens */
     }
-    .hi{
+
+    .introcontent {
+        font-size: 8vw;
+        align-items: center; /* Center the text content */
+        text-align: center;
+    }
+
+    .hi {
         font-size: 4.5vw;
+    }
+
+    .btn {
+        padding: 0.5rem 1.5rem; /* Adjust button size */
+        font-size: 0.9rem; /* Slightly smaller font for buttons */
     }
 }
 
-@media screen and (max-width:720px){
-    .bg{
-        display: none;
+/* Small Devices (Phones) */
+@media screen and (max-width: 720px) {
+    #intro {
+        flex-direction: column-reverse;
+        align-items: center;
     }
-    
+
+    .bg {
+        display: none; /* Hide image on small screens */
+    }
+
+    .introcontent {
+        font-size: 8vw; /* Adjust font size for smaller screens */
+        align-items: center; /* Center-align the content on small screens */
+        text-align: center; /* Center text when content is centered */
+    }
+
+    .hi {
+        font-size: 5vw; /* Larger "Hi" text for mobile */
+    }
+
+    .btn {
+        width: 80%; /* Full-width button on small screens */
+        margin: 1rem auto; /* Center the button */
+        padding: 0.75rem 1.5rem; /* Adjust padding for mobile */
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 480px) {
+    .introcontent {
+        font-size: 6vw; /* Smaller font size for very small screens */
+    }
+
+    .hi {
+        font-size: 6vw; /* Adjust "Hi" size for very small screens */
+    }
+
+    .btn {
+        padding: 0.5rem 1rem; /* Smaller button padding */
+        font-size: 0.8rem; /* Smaller font for buttons */
+    }
 }

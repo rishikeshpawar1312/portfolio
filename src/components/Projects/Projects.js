@@ -1,39 +1,48 @@
-import React from 'react'
-import './Projects.css'
- 
-import PROJECT from '../../assests/PROJECT.png'
-
+import React from 'react';
+import './Projects.css';
+import bloglogo from '../../assests/bloglogo.png';
+import newslogo from '../../assests/newslogo.png';
 
 function Projects() {
   return (
-   <section id="project">
-   <div class="projectpart">
-     <div class="projecttitle">Projects I Made</div>
-     <div class="projectsrow">
-       <div class="card">
-         <img src={PROJECT} alt="" class="projectsimgs" />
-         <div class="card-description">Description for Project 1</div>
-       </div>
-       <div class="card">
-         <img src={PROJECT} alt="" class="projectsimgs" />
-         <div class="card-description">Description for Project 2</div>
-       </div>
-       <div class="card">
-         <img src={PROJECT} alt="" class="projectsimgs" />
-         <div class="card-description">Description for Project 2</div>
-       </div>
-     </div>
-     {/* <div class="projectsrow">
-       <div class="card">
-         <img src={PROJECT} alt="" class="projectsimgs" />
-         <div class="card-description">Description for Project 3</div>
-       </div>
-        
-     </div> */}
-   </div>
- </section>
- 
-  )
+    <section id="project">
+      <div className="projectpart">
+        <div className="projecttitle">Projects I Made</div>
+        <div className="projectsrow">
+          <div className="card">
+            <img src={bloglogo} alt="Project 1" className="card-img" />
+            <div className="card-content">
+              <div className="card-skills">Skills: React, Node.js, HTML, CSS , Javascript , Appwrite , Redux</div>
+              <div className="card-buttons">
+                <a href="https://github.com/rishikeshpawar1312/blogwebsite" target="_blank" rel="noopener noreferrer" className="card-link">GitHub</a>
+                <a href="https://blogwebsite-kohl.vercel.app/" target="_blank" rel="noopener noreferrer" className="card-link">Live Site</a>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <img src={newslogo} alt="Project 2" className="card-img" />
+            <div className="card-content">
+              <div className="card-skills">Skills:React , API-Integration,JavaScript, HTML, CSS </div>
+              <div className="card-buttons">
+                <a href="https://github.com/rishikeshpawar1312/Newsapp" target="_blank" rel="noopener noreferrer" className="card-link">GitHub</a>
+                <a href="https://your-live-site.com" target="_blank" rel="noopener noreferrer" className="card-link">Live Site</a>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <img src={newslogo} alt="Project 3" className="card-img" />
+            <div className="card-content">
+              <div className="card-skills">Skills:Javasricpt ,Youtube Data API </div>
+              <div className="card-buttons">
+                <a href="https://github.com/priyaup/smart-education-application" target="_blank" rel="noopener noreferrer" className="card-link">GitHub</a>
+                <a href="https://your-live-site.com" target="_blank" rel="noopener noreferrer" className="card-link">Live Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Projects
+export default Projects;
