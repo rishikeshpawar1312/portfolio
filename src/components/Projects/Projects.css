@@ -82,6 +82,22 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
+.cardtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black; /* White text for contrast */
+  padding: 0.5rem 0.5rem; /* Medium padding for a balanced size */
+  font-size: 1.25rem; /* Medium font size */
+  font-weight:  300; /* Medium font weight for a modern look */
+  text-align: center;
+  border-radius: 0.25rem; /* Slightly rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 1.5rem; /* Space below the title */
+  width: 90%; /* Slightly narrower width for modern aesthetics */
+}
+
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .card {
