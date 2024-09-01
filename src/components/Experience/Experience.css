@@ -80,11 +80,14 @@
     .card-image {
       margin: 20px 0 0 0;
     }
+    .experience-title {
+      font-size: 2.5rem;
+    }
   }
   
   @media screen and (max-width: 480px) {
     .experience-title {
-      font-size: 2.5rem;
+      font-size: 1.75rem;
     }
     
     .card-title {
@@ -96,4 +99,8 @@
       font-size: 0.85rem;
     }
   }
-  
+  @media screen and (max-width: 320px) {
+    .experience-title {
+      font-size: 1.5rem;
+    }
+  }

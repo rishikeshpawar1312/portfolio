@@ -79,37 +79,26 @@
     z-index: 2;
     display: none; /* Initially hidden, will display on hamburger click */
     flex-direction: column;
-    align-items: flex-start; /* Aligns items to the left within the menu */
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     background-color: rgb(40, 40, 40);
     border-radius: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
 }
 
 .ham {
-    display: none; /* Ensure the hamburger icon is displayed */
-    object-fit: contain; /* Prevents image stretching */
-    height: 2.5rem; /* Adjusted for a more standard size */
-    width: 2.5rem; /* Adjusted for a more standard size */
+    display: none;
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
     cursor: pointer;
 }
 
 .listitem {
     color: white;
-    padding: 0.75rem 1.5rem; /* Adjusted padding for better spacing */
-    margin: 0.25rem 0; /* Reduced margin for a more compact menu */
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
     background-color: rgb(30, 30, 30);
-    border-radius: 0.5rem; /* Smooth edges */
-    width: 100%; /* Full width for better touch targets */
-    text-align: left; /* Align text to the left for readability */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+    border-radius: 0.5rem; /* Added for smoother edges */
 }
-
-.listitem:hover {
-    background-color: #555; /* Slightly lighter grey on hover */
-    transform: scale(1.05); /* Subtle pop effect on hover */
-}
-
 
 /* Media Queries */
 @media screen and (max-width: 720px) {
