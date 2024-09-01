@@ -32,7 +32,8 @@ function Navbar() {
        <Link  activeClass='active' to='AboutMe' smooth={true} spy={true} offset={-100} duration={500} className="listitem" onClick={()=>setshowmenu(false)}>About Me</Link>
        <Link  activeClass='active' to='skills' smooth={true} spy={true} offset={-100} duration={500} className="listitem" onClick={()=>setshowmenu(false)}>Skills</Link>
        <Link  activeClass='active' to='project' smooth={true} spy={true} offset={-100} duration={500} className="listitem" onClick={()=>setshowmenu(false)}>Projects</Link>
-
+       <Link  activeClass='active' to='contact' smooth={true} spy={true} offset={-100} duration={500} className="listitem" onClick={()=>setshowmenu(false)}>Contact</Link>
+       <a href="https://github.com/rishikeshpawar1312" target="_blank" rel="noopener noreferrer" className="listitem">GitHub</a>
     </div>
 
     </nav>
