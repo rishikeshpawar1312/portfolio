@@ -10,7 +10,7 @@ function Intro() {
         <span className='hi'> Hi</span>
         <span className='introtext'>I'm <span className='introname'>Rishikesh Pawar</span><br />
           Web-Developer<p className='intropara'>I am a skilled web developer</p></span>
-        <a href="https://drive.google.com/file/d/1B_LuESFwed9BVoCS4npPqqbQbImABP5W/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <a href="https://drive.google.com/file/d/1UhfbhiNucZ-WPlPKWDbQ0k7YTRuK_iAp/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
           <button className="btn"><img src={hire} alt="" className='btnimg' />Resume</button>
         </a>
       </div>
