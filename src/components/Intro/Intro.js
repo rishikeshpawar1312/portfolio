@@ -9,8 +9,8 @@ function Intro() {
       <div className="introcontent">
         <span className='hi'>Hi</span>
         <span className='introtext'>I'm <span className='introname'>Rishikesh Pawar</span><br />
-          Web-Developer<p className='intropara'>I am a skilled web developer</p></span>
-        <a href="https://drive.google.com/file/d/1UhfbhiNucZ-WPlPKWDbQ0k7YTRuK_iAp/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        Full-Stack Developer<p className='intropara'>"Building modern web apps with React and Next.js, while exploring React Native to bring seamless experiences to mobile platforms."</p></span>
+        <a href="https://drive.google.com/file/d/16ARKSmk3bZgnhuPpDsor3cNFkcUxfIBL/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           <button className="btn"><img src={hire} alt="" className='btnimg' />Resume</button>
         </a>
       </div>
